@@ -1,0 +1,457 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body >
+<!--
+onLoad = "alert('your web page is loaded')";
+-->
+
+<!--
+onUnload = "alert('your web page is loaded')";
+-->
+
+<script type="text/javascript">
+function t1() {
+    document.write("hello javascript!");
+}
+
+function t2() {
+// single line comments
+/*
+    multiple
+    line
+    comments
+*/    
+    document.write("i love ham ");
+    document.write("i love bacon too");
+}
+
+function t3() {
+    var x = 23;
+    document.write(x);
+}
+
+function t4() {
+    var y = -2.23456
+    document.write(y);
+    
+    var t = "some thing need to do";
+    document.write('<br>' + t + '<br>');
+}
+
+function t5() {    
+    var name = "bucky";
+    var age = 24;
+    document.write(name + " is my name , and my age is " + age + '<br>');
+    var tuna = "i am tuna ";
+    var bacon = "i am bacon ";
+    var ham = "i am hambegur";
+    document.write(tuna + bacon + ham + '<br>');
+}
+
+function funcky() {
+    alert("ouch!!!");
+}
+
+function t6() {
+    funcky();
+}
+
+function meetball(x) {
+    alert(" i lave " + x);
+}
+
+function t7() {
+    meetball("bacon");
+}
+
+function compare(a, b) {
+    document.write(a + " is better than "  + b  + "<br>");    
+}
+
+function t8() {
+    compare("apple", "pear");
+}
+
+function addNum(a,b) {
+    var c = a + b;
+    return c;
+}
+
+function t9() {
+    document.write(addNum(1,2));
+}
+
+
+function first(){
+    document.write("i am the first <br>");
+}
+
+function second(){
+    document.write("i am the second <br>");
+}
+
+function t10(){
+    first();
+    second();
+}
+
+var girlName = "kelsy";
+function t11() {
+    var girlAge = 22;
+    document.write("name " + girlName + " age " + girlAge + "<br>");
+}
+
+function t12() {
+    var num = 1 + 2 + 3*4 + 5*5 - 1 + 4/2;
+    document.write(num);
+}
+
+function t13() {
+    var num = 1;
+    num += 2;
+    num *= 3;
+    num -= 1;
+    document.write(num);
+}
+
+function t14() {
+    var num1 = 33;
+    var num2 = 22;
+    
+    if (num1 > num2) {
+        document.write("num1 is bigger than num2");
+    }
+}
+
+function t15() {
+    var num1 = 11;
+    var num2 = 22;
+    
+    if (num1 == num2) {
+        document.write("num1 equals num2");
+    } else {
+        document.write("num1 not equals num2");
+    }
+}
+
+function t16() {
+    var fname = "bucky";
+    var lname = "roberts";
+    
+    if (fname == "bucky") {
+        if (lname == "roberts") {
+            document.write(" i am bucky roberts");
+        } else {
+            document.write(" i am bucky someone");
+        }
+    }
+}
+
+function t17() {
+    var fname = "bucky";
+    var lname = "roberts";
+    
+    if (fname == "bucky" && lname == "roberts") {
+        document.write(" i am bucky roberts");
+    } else {
+        document.write(" i am someone else");
+    }
+}
+
+function t18() {
+    var girl = "natalie";
+    
+    switch (girl) {
+        case "natalie":
+            document.write("natalie");
+            break;
+        case "ashley":
+            document.write("ashley");
+            break;
+        default :
+            document.write("this is default");
+            break;
+    }
+}
+
+function t19() {
+    for (x = 0; x < 10; x++) {
+        document.write("is javascript good? <br>");
+    }
+}
+
+function t20() {
+    var x = 0;
+    
+    while (x < 10) {
+        document.write(x + "<br>");
+        x++;
+    }
+}
+
+function t21() {
+    var x =5;
+    
+    do {
+        document.write(x + "<br>");
+        x++;
+        } while(x < 10);
+}
+
+function t24() {
+    var tuna = "i am a tuna fish";
+    
+    document.write(tuna.length);
+}
+
+function person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.yearUntiRetired = yearToRetire;
+}
+
+function yearToRetire() {
+    var year = 65 - this.age;
+    return year ;
+}
+
+function t25() {
+    var bucky = new person("bucky roberts", 24);
+    var kobe = new person("kobe briant", 30);
+    
+    document.write(bucky.name + "<br>");
+    document.write(kobe.name + "<br>");
+}
+
+function t26() {
+    boy = {name:"bucky roberts", age:24};
+    girl = {name:"tailor swift", age:20};
+    //document.write("hello");
+    document.write(boy.name + " love " + girl.name + " because she is " + girl.age);
+}
+
+function t27() {
+    var bucky = new person("bucky roberts", 24);
+    var kobe = new person("kobe briant", 30);
+    document.write(bucky.name + " has " + bucky.yearUntiRetired() + " years to retire" + "<br>");
+    document.write(kobe.name + " has " + kobe.yearUntiRetired() + " years to retire" + "<br>");
+}
+
+function t28() {
+    var arr = new Array("first", "second", "third", "fourth", "fifth");
+    //document.write("hello");
+    document.write(arr[0] + "<br>");
+    document.write(arr[1] + "<br>");
+    document.write(arr[2] + "<br>");
+    document.write(arr[3] + "<br>");
+}
+
+function t29() {
+    var arr = new Array();
+    arr[0] = "first";
+    arr[1] = "second";
+    arr[2] = "third";
+    arr[3] = "fouth";
+
+    document.write(arr[0] + "<br>");
+    document.write(arr[1] + "<br>");
+    document.write(arr[2] + "<br>");
+    //document.write(arr[3] + "<br>");    
+}
+
+function t30() {
+    var arr = new Array();
+    arr[0] = "first";
+    arr[1] = "second";
+    arr[2] = "third";
+    arr[3] = "fouth";
+  
+    var arr2 = new Array();
+    arr2[0] = "fifth";
+    arr2[1] = "sixth";
+    arr2[2] = "seventh";
+    arr2[3] = "eighth";
+    
+    var arr3 = arr2.concat(arr);
+    document.write(arr3.length);
+}
+
+function t31() {
+    var arr = new Array();
+    arr[0] = "first";
+    arr[1] = "second";
+    arr[2] = "third";
+    arr[3] = "fouth";
+
+    var str = arr.join(" ");
+    document.write(str + "<br>");
+    
+    arr.pop();
+    document.write(arr.length);
+}
+
+function t32() {
+    var arr = new Array();
+    arr[0] = "AA";
+    arr[1] = "BB";
+    arr[2] = "DD";
+    arr[3] = "CC";
+
+    arr.reverse();
+    document.write(arr.join() + " <br>");
+    
+    arr.push("FF", "EE");
+    document.write(arr.join() + " <br>");
+    
+    arr.sort();
+    document.write(arr.join() + " <br>");
+}
+
+function t33() {
+    //var pie = prompt("enter your name", "");
+    //document.write("hello " + pie);
+    var arr = new Array(3);
+    
+    for (i = 0; i < 3; i++) {
+        arr[i] = prompt("Enter something", "");
+    }
+    
+    document.write(arr.join());
+}
+
+function t34() {
+    var arr = new Array();
+    arr[0] = "AA";
+    arr[1] = "BB";
+    arr[2] = "DD";
+    arr[3] = "CC";
+    
+    for (i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+}
+
+function t35() {
+    var arr = new Array();
+    arr["color"] = "Blue";
+    arr["food"] = "Hamburg";
+    
+    document.write("color is " + arr["color"] + "<br>");
+    document.write("food is " + arr["food"] + "<br>");
+}
+
+function t36() {
+    var num = prompt("enter a number", "");
+    document.write("sqrt is " + Math.sqrt(num) + "<br>");
+    document.write("PI is " + Math.PI + "<br>");
+}
+
+function t37() {
+    //setInterval("t35()", 1000);
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    document.write(hours + ":" + minutes+ ":" + seconds + "<br>");
+}
+
+function t38() {
+    var len = document.forms[0].length;
+    document.write(len);
+}
+
+function t39() {
+    //var name = document.forms[0].elements[0].value;
+    var name = document.form3.username.value;
+    alert(name);
+}
+
+function t40() {
+    if (document.form4.thebox.checked) 
+        alert("checked");
+    else
+        alert("not checked");
+}
+
+function hello() {
+    alert("Hello Zongcheng!");
+}
+//t1();
+//t2();
+//t3();
+//t4();
+//t5();
+//t6();
+//t7();
+//t8();
+//t9();
+//t10();
+//t11();
+//t12();
+//t13();
+//t14();
+//t15();
+//t16();
+//t17();
+//t18();
+//t19();
+//t20();
+//t21();
+//t24();
+//t25();
+//t26();
+//t27();
+//t28();
+//t29();
+//t30();
+//t31();
+//t32();
+//t33();
+//t34();
+//t35();
+//t36();
+//t37();
+//t38();
+//t39();
+//t40();
+hello();
+</script>
+
+<!--
+t22
+<form name = "form1">
+<input type = "button" value = "touch me" onclick = "funcky()" >
+</form>
+-->
+
+<!--
+t23
+<form name = "form2">
+<a href = "http://www.google.com" onclick = "funcky()" >  search in google </a>
+</form>
+-->
+
+<!--
+<form name = "form3">
+username:<input type = "text" name = "username">
+password:<input type = "text" name = "password">
+<input type = "button" value = "submit" onclick = "t39()" >
+</form>
+-->
+
+<form name = "form4">
+<input type = "checkbox" name = "thebox">
+<input type = "button" value = "ok" onclick = "t40()" >
+</form>
+
+
+
+</body>
+
+
+</html>
